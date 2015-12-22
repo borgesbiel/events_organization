@@ -11,10 +11,12 @@ gem 'faker'
 
 #quiet assets
 gem 'quiet_assets', '~> 1.1'
-#wrap undescore.js
+
+#maps
 gem 'underscore-rails'
-#gmaps
+gem 'geocoder'
 gem 'gmaps4rails'
+
 #image upload
 gem "paperclip", "~> 4.3"
 
