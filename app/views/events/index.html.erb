@@ -40,6 +40,15 @@
 
 <%= link_to 'New Event', new_event_path %>
 
+<h2>Import Events</h2>
+
+<%= form_tag import_events_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
+
+<br>
+
 <div style='width: 800px;'>
   <div id="gmaps" style='width: 800px; height: 400px;'></div>
 </div>

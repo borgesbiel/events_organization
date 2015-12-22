@@ -12,6 +12,9 @@ gem 'faker'
 #quiet assets
 gem 'quiet_assets', '~> 1.1'
 
+#interface to spreadsheets
+gem 'roo', '~> 2.1.0'
+
 #maps
 gem 'underscore-rails'
 gem 'geocoder'

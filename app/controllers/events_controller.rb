@@ -12,6 +12,12 @@ class EventsController < ApplicationController
       marker.infowindow render_to_string( partial: 'events/mapinfo', locals: { event: event })
     end
   end
+  
+  #import events spreadsheet
+  def import
+    Event.import(params[:file])
+    redirect_to root_url, notice: "Events imported."
+  end
 
   # GET /events/1
   # GET /events/1.json
