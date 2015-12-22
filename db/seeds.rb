@@ -5,4 +5,5 @@
         lname: Faker::Name.last_name,
         email: Faker::Internet.email
       ) 
+      p "Seed = #{fname} #{lname} #{email}"
 end 
