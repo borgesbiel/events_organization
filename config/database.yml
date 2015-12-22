@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  username: gabriel
+  password: gabriel
+
+production:
+  <<: *default
+  database: events_production
+
+development:
+  <<: *default
+  database: events_development
+
+test:
+  <<: *default
+  database: events_test
