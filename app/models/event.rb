@@ -2,7 +2,7 @@ class Event < ActiveRecord::Base
   belongs_to :user
 
   #order events desc
-  default_scope { order(event_date: :desc) }
+  default_scope { order(event_date: :asc) }
   
   #geocode stuff
   geocoded_by :address
