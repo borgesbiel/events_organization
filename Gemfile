@@ -14,6 +14,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+#ffaker for seed underscore-rails
+gem 'ffaker'
+
 #quiet assets
 gem 'quiet_assets', '~> 1.1'
 #wrap undescore.js
