@@ -1,5 +1,22 @@
 <p id="notice"><%= notice %></p>
 
+<% @events.each do |event| %>
+  <h1><%= event.name %></h1>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+  <p>
+    <%= image_tag event.image.url(:thumb) %>
+  </p>
+
+  <p>
+    <strong>When:</strong>
+    <%= event.event_date %>
+  </p>
+
+  <p>
+    <strong>Where:</strong>
+    <%= event.address %>
+  </p>
+<% end %>  
+
+ <!--<%= link_to 'Edit', edit_user_path(@user) %> |-->
 <%= link_to 'Back', users_path %>
