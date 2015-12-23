@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :user %><br>
+    <%= f.collection_select(:user_id, User.all.order(fname: :asc), :id, :first_and_last_name, :include_blank => true, class: 'ui search dropdown' ) %>
+  </div>
+  <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>

@@ -1,6 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>User:</strong>
+  <% if @event.user.blank? %>
+    <%= p " " %>
+  <% else  %>
+    <%= @event.user.first_and_last_name %>
+  <% end %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @event.name %>
 </p>
