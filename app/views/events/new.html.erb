@@ -2,4 +2,12 @@
 
 <%= render 'form' %>
 
+<h2>Import Events</h2>
+<p>Import Events from spreadsheet </p>
+<%= form_tag import_events_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
+<br>
+
 <%= link_to 'Back', events_path %>
