@@ -13,8 +13,8 @@ p "Users seeded"
 p "---------------------------------------------------------"
 p "Seeding Events for user_id = 1"
   Event.create(        
-    name: "Coldplay",
-    image: "https://lh5.googleusercontent.com/-FAnRo_TRYF0/AAAAAAAAAAI/AAAAAAAAZmU/WLmp1Hspye4/s0-c-k-no-ns/photo.jpg",
+    name: "Eminem",
+    image: "https://consequenceofsound.files.wordpress.com/2013/10/eminem.jpg",
     address: "Allianz Parque, Sao Paulo",
     event_date: "2016-04-07",
     latitude: -23.5505199,
@@ -22,8 +22,8 @@ p "Seeding Events for user_id = 1"
     user_id: 1
   )
   Event.create(        
-    name: "Lollapalooza",
-    image: "http://lolp1.br.c3cdn.com/wp/wp-content/uploads/2013/12/novologololla2.png",
+    name: "Florence",
+    image: "http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2015/2/12/1423759757798/6a8c828c-41ef-43aa-bb73-75d86aee1c00-2060x1236.jpeg",
     address: "Autodromo de interlagos, Sao Paulo",
     event_date: "2016-03-12",
     latitude: -23.7062075,
