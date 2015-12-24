@@ -1,43 +1,61 @@
-<p id="notice"><%= notice %></p>
+<div class="col-md-8">
+  <p id="notice"><%= notice %></p>
+</div>
 
-<p>
-  <strong>User:</strong>
-  <% if @event.user.blank? %>
-    <%= p " " %>
-  <% else  %>
-    <%= @event.user.first_and_last_name %>
-  <% end %>
-</p>
+<div class="col-md-8">
+  <p>
+    <strong>User:</strong>
+    <% if @event.user.blank? %>
+      <%= p " " %>
+    <% else  %>
+      <%= @event.user.first_and_last_name %>
+    <% end %>
+  </p>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+<div class="col-md-8">
+  <p>
+    <strong>Name:</strong>
+    <%= @event.name %>
+  </p>
+</div>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @event.image.url(:medium) %>
-</p>
+<div class="col-md-8">
+  <p>
+    <strong>Image:</strong>
+    <%= image_tag @event.image.url(:medium) %>
+  </p>
+</div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @event.address %>
-</p>
+<div class="col-md-8">
+  <p>
+    <strong>Address:</strong>
+    <%= @event.address %>
+  </p>
+</div>
 
-<p>
-  <strong>Event date:</strong>
-  <%= @event.event_date %>
-</p>
+<div class="col-md-8">
+  <p>
+    <strong>Event date:</strong>
+    <%= @event.event_date %>
+  </p>
+</div>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @event.latitude %>
-</p>
+<div class="col-md-8">
+  <p>
+    <strong>Latitude:</strong>
+    <%= @event.latitude %>
+  </p>
+</div>
 
-<p>
-  <strong>Longitude:</strong>
-  <%= @event.longitude %>
-</p>
+<div class="col-md-8">
+  <p>
+    <strong>Longitude:</strong>
+    <%= @event.longitude %>
+  </p>
+</div>
 
-<%= link_to 'Edit', edit_event_path(@event),{class: 'btn btn-default'} %> |
-<%= link_to 'Back', events_path,{class: 'btn btn-default'} %>
+<div class="col-md-8">
+  <%= link_to 'Edit', edit_event_path(@event),{class: 'btn btn-default'} %> |
+  <%= link_to 'Back', events_path,{class: 'btn btn-default'} %>
+</div>

@@ -1,13 +1,21 @@
 <h1>New Event</h1>
 
-<%= render 'form' %>
+<div class="container-fluid">
+  <div class="col-md-8">
+    <%= render 'form' %>
+  </div>
+</div>
 
 <h2>Import Events</h2>
-<p>Import Events from spreadsheet </p>
-<%= form_tag import_events_path, multipart: true do %>
-  <%= file_field_tag :file,{class: 'btn btn-default'} %>
-  <%= submit_tag "Import",{class: 'btn btn-default'} %>
-<% end %>
-<br>
+  <div class="col-md-8">    
+    <%= form_tag import_events_path, multipart: true do %>
+      <%= file_field_tag :file,{class: 'btn btn-default'} %>        
+      <br>
+      <%= submit_tag "Import",{class: 'btn btn-default'} %>
+    <% end %>    
+  </div>
 
-<%= link_to 'Back', events_path,{class: 'btn btn-default'} %>
+<div class="col-md-8">
+  <br>
+  <%= link_to 'Back', events_path,{class: 'btn btn-default'} %>
+</div>
