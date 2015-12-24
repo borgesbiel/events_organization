@@ -1,4 +1,6 @@
-<h1>New Event</h1>
+<div class="col-md-8">
+  <h1>New Event</h1>
+</div>
 
 <div class="container-fluid">
   <div class="col-md-8">
@@ -6,14 +8,14 @@
   </div>
 </div>
 
-<h2>Import Events</h2>
-  <div class="col-md-8">    
+<div class="col-md-8">    
+  <h2>Import Events</h2>
     <%= form_tag import_events_path, multipart: true do %>
       <%= file_field_tag :file,{class: 'btn btn-default'} %>        
       <br>
       <%= submit_tag "Import",{class: 'btn btn-default'} %>
     <% end %>    
-  </div>
+</div>
 
 <div class="col-md-8">
   <br>
