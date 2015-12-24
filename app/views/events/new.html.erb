@@ -5,9 +5,9 @@
 <h2>Import Events</h2>
 <p>Import Events from spreadsheet </p>
 <%= form_tag import_events_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
+  <%= file_field_tag :file,{class: 'btn btn-default'} %>
+  <%= submit_tag "Import",{class: 'btn btn-default'} %>
 <% end %>
 <br>
 
-<%= link_to 'Back', events_path %>
+<%= link_to 'Back', events_path,{class: 'btn btn-default'} %>

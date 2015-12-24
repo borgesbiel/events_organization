@@ -15,6 +15,8 @@ class EventsController < ApplicationController
   def import
     Event.import(params[:file])
     redirect_to root_url, notice: "Events imported."
+  rescue
+    redirect_to root_url, notice: "Invalid CSV file format."
   end
 
   def show
