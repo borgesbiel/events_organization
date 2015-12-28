@@ -14,7 +14,7 @@ class Event < ActiveRecord::Base
   
   #import events spreadsheet
   def self.import(file)
-    CSV.foreach(file, headers: true) do |row|
+    CSV.foreach(file.path, headers: true) do |row|
       event = Event.new(name: row[0], image: row[1], address: row[2], event_date: row[3])
       event.save!
     end  
