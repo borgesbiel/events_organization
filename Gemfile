@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do  
+  gem 'minitest', '~> 5.8', '>= 5.8.3'
+  gem 'minitest-rails', '~> 2.2'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
 end
