@@ -14,10 +14,37 @@ class Event < ActiveRecord::Base
   
   #import events spreadsheet
   def self.import(file)
-    CSV.foreach(file, headers: true) do |row|
-      event = Event.new(name: row[0], image: row[1], address: row[2], event_date: row[3])
-      event.save!
-    end  
+  
+  headers = [
+      "name",
+      "image",
+      "address",
+      "event_date"     
+    ]
+ 
+    ActiveRecord::Base.establish_connection
+ 
+    CSV.foreach(file.path, headers: true) do |row|
+      sql_keys = []
+      sql_vals = []
+ 
+      created_at = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+ 
+      headers.each_with_index do |key, idx|
+        val = row[idx]
+ 
+        sql_keys << key
+        sql_vals << ActiveRecord::Base.connection.quote(val)
+      end
+ 
+      sql = "
+        INSERT INTO events (#{sql_keys.join(', ')}, created_at, updated_at) 
+        VALUES (#{sql_vals.join(', ')}, '#{created_at}', '#{created_at}')
+      "
+ 
+      res = ActiveRecord::Base.connection.execute(sql)
+      #bar_id = ActiveRecord::Base.connection.last_inserted_id(res)   
+    end
   end
   
 end
