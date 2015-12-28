@@ -5,11 +5,7 @@
 <div class="col-md-8">
   <p>
     <strong>User:</strong>
-    <% if @event.user.blank? %>
-      <%= p " " %>
-    <% else  %>
-      <%= @event.user.first_and_last_name %>
-    <% end %>
+    <%= @event.user.first_and_last_name if @event.user.present? %>
   </p>
 </div>
 
