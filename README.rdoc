@@ -15,19 +15,19 @@
 - rake db:create db:migrate db:seed
 - rails server
 
-Tarefas:
+= Tarefas:
 
-Criar uma feature para cadastrar os eventos. Quero ver o nome do evento, uma foto, o endereço e a data.
+- Criar uma feature para cadastrar os eventos. Quero ver o nome do evento, uma foto, o endereço e a data.
 
 *Done*
 
-Quero uma lista com os próximos eventos que vão ocorrer. Preciso que sejam ordenadas de acordo com a data.
+- Quero uma lista com os próximos eventos que vão ocorrer. Preciso que sejam ordenadas de acordo com a data.
 *Done*
 
-Quero um mapa com os próximos eventos que vão ocorrer, ao clicar no pin quero ver as informações do evento.
+- Quero um mapa com os próximos eventos que vão ocorrer, ao clicar no pin quero ver as informações do evento.
 *Done*
 
-Essa aplicação pode ser usada por vários usuários e cada usuário poderá cadastrar seus eventos. Não é necessário fazer a autenticação, mas é necessário que eu possa cadastrar em nome de um usuário. Também não é necessário fazer o cadastro do usuário. Você pode cadastrar os usuários no seed do Rails.
+- Essa aplicação pode ser usada por vários usuários e cada usuário poderá cadastrar seus eventos. Não é necessário fazer a autenticação, mas é necessário que eu possa cadastrar em nome de um usuário. Também não é necessário fazer o cadastro do usuário. Você pode cadastrar os usuários no seed do Rails.
 *Cadastro de usuarios/eventos criados e tambem é possivel a edição do evento direcionando-o para um usuario cadastrado.Tambem foram criados seeds para user e events.*
 
 - O site não precisa ter um layout muito rebuscado, porém, precisa ser organizado.
