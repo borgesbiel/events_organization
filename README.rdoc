@@ -2,12 +2,17 @@
 
 Specs- 
 
-*Ruby 2.2
-*Rails 4.2
-*PG 9.4
-*Bootstrap-sass
-*gmaps4rails + geocoder
-*roo + csv
+Ruby 2.2
+
+Rails 4.2
+
+PG 9.4
+
+Bootstrap-sass
+
+gmaps4rails + geocoder
+
+roo + csv
 
 Steps-
 
