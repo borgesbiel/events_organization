@@ -9,7 +9,7 @@ class Event < ActiveRecord::Base
   after_validation :geocode, :if => :address_changed?
 
   #paperclip
-  has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/images/:style/missing.png"
+  has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "http://vignette1.wikia.nocookie.net/questworld/images/4/47/Comic_image_missing.png/revision/latest?cb=20100421133705"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   
   #import events spreadsheet

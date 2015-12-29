@@ -1,13 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  image: MyString
-  address: MyString
-  event_date: 2015-12-21
-
+  name: Racionais
+  image: http://imguol.com/c/entretenimento/2013/11/12/racionais-mcs-na-capa-da-revista-rolling-stone-brasil-de-novembro-de-2013-1384268785253_1920x1080.jpg
+  address: Pinheiros, Sao Paulo
+  event_date: 2016-04-07
 two:
-  name: MyString
-  image: MyString
-  address: MyString
-  event_date: 2015-12-21
+  name: Emicida
+  image: http://www.kboing.com.br/fotos/imagens/536cc9ccb9163.jpg
+  address: Osasco, Sao Paulo
+  event_date: 2016-03-12
