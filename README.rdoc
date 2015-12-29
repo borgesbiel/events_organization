@@ -1,29 +1,45 @@
 == README
 
-Specs- 
+= Specs
 
-Ruby 2.2
-Rails 4.2
-PG 9.4
-Bootstrap-sass
-gmaps4rails + geocoder
-roo + csv
+- Ruby 2.2
+- Rails 4.2
+- PG 9.4
+- Bootstrap-sass
+- gmaps4rails + geocoder
+- roo + csv
 
-Steps-
+= Steps
 
-1---
-database.yml está configurado para user/password = gabriel, criar este user e sua role no postgresql.
+- database.yml está configurado para user/password = gabriel, criar este user e sua role no postgresql.
+- rake db:create db:migrate db:seed
+- rails server
 
-2---
-rake db:create db:migrate db:seed
+= Tarefas:
 
-3---
-rails server
+- Criar uma feature para cadastrar os eventos. Quero ver o nome do evento, uma foto, o endereço e a data.
+>Done
 
-Obs-
+- Quero uma lista com os próximos eventos que vão ocorrer. Preciso que sejam ordenadas de acordo com a data.
+>Done
 
-1---
-Criei 2 tasks no Seeds.rb , uma para usuarios e outra para eventos cadastrados pelo usuario id 1.
+- Quero um mapa com os próximos eventos que vão ocorrer, ao clicar no pin quero ver as informações do evento.
+>Done
 
-2---
-Utilizar a planilha eventos.csv que está na raiz do projeto para fazer o Import de Eventos.
+- Essa aplicação pode ser usada por vários usuários e cada usuário poderá cadastrar seus eventos. Não é necessário fazer a autenticação, mas é necessário que eu possa cadastrar em nome de um usuário. Também não é necessário fazer o cadastro do usuário. Você pode cadastrar os usuários no seed do Rails.
+>Cadastro de usuarios/eventos criados e tambem é possivel a edição do evento direcionando-o para um usuario cadastrado.Tambem foram criados seeds para user e events.*
+
+- O site não precisa ter um layout muito rebuscado, porém, precisa ser organizado.
+>Bootstrap simples
+
+- Deixei alguns eventos pré-cadastrados em uma planilha(http://bit.ly/1m3RI9T), que deverá ser importada através do sistema ou de uma rake task.
+>Planilha eventos.csv usada para testes
+
+- Quero ter uma página que liste os usuários e ao clicar no usuário verei um link com o título de "Meus eventos". Ao clicar nesse link, abre uma lista de eventos cadastrados por esse usuário.
+>Done
+
+= OBS
+- Criei 2 tasks no Seeds.rb , uma para usuarios e outra para eventos cadastrados pelo usuario id 1.
+- Utilizar a planilha eventos.csv que está na raiz do projeto para fazer o Import de Eventos.
+
+cheers
