@@ -22,4 +22,8 @@ rails server
 
 Obs-
 
+1---
 Criei 2 tasks no Seeds.rb , uma para usuarios e outra para eventos cadastrados pelo usuario id 1.
+
+2---
+Utilizar a planilha eventos.csv que está na raiz do projeto para fazer o Import de Eventos.
