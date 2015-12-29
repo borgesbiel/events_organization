@@ -26,6 +26,7 @@ gem 'gmaps4rails'
 
 #image upload
 gem "paperclip", "~> 4.3"
+gem "aws-sdk"
 
 gem 'jquery-rails'
 gem 'turbolinks'
