@@ -32,3 +32,9 @@ Criei 2 tasks no Seeds.rb , uma para usuarios e outra para eventos cadastrados p
 
 2---
 Utilizar a planilha eventos.csv que está na raiz do projeto para fazer o Import de Eventos.
+
+3---
+Na tela de edicao de evento, podemos atribuir um usuario ao evento desejado
+
+4---
+Pode ser criado um novo evento passando suas informacoes e tambem um novo usuario, nos caminhos de new event ou new user.
