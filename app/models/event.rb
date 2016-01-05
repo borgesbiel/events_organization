@@ -1,7 +1,7 @@
 class Event < ActiveRecord::Base
   belongs_to :user
   
-  validates :name, :image, :address, :event_date, :latitude, :longitude, presence: true
+  validates :name, :image, :address, :event_date, presence: true
 
   #order events desc
   default_scope { order(event_date: :asc) }
