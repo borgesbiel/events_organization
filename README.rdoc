@@ -1,5 +1,8 @@
 == README
 
+= Live at heroku
+- http://eventsorganization.herokuapp.com/
+
 = Specs
 
 - Ruby 2.2
